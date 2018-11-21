@@ -11,7 +11,7 @@ html,body{
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	flex-direction: row;
-	align-items: flex-end;
+	align-items:flex-end;
 }
 
 .Logo{
@@ -28,25 +28,40 @@ html,body{
 }
 
 #GlavniOkvir {
-	background-color: blue;
+	background-color:blue;
 	margin: 0 auto 0 auto;
 	width: 950px;
 }
 
 #Glava {
-	background-color: gray;
-	height: 100px;
+	background-color:green;
+	height: 200px;
 	width: 950px;
 }
 
 #Navigacija {
-    background-color: lightyellow;
+    background-color:yellow;
     height: 30px;
     width: 950px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#Navigacija ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	list-style-type: none;
+	height: 30px;
 }
 
 #Vsebina {
-	background-color: red;
+	background-color:red;
 	min-height: 350px;
 	width: 950px;
 	display: flex;
