@@ -1,67 +1,68 @@
 html,body{
-	margin:0;
-	padding:0;
-
+	margin: 0;
+	padding: 0;
 }
-#ZgornjaPasica {
-	background-color: lightblue;
+#ZgornjaPasica{
+	height:100px;
 	width: 950px;
-	height: 100px;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	flex-direction: row;
 	align-items:flex-end;
 }
-
 .Logo{
-    margin-left: 20px;
+	margin-left: 20px;
 }
-
-#FacebookTwitter {
-    margin-right: 20px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+#FacebookTwitter{
+	margin-right: 20px;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-end;
 }
-
+#FakebookTwitter a {
+    margin-bottom: 8px;
+    margin-left: 10px
+}
+#FacebookTwitter p {
+	font-size: 14px
+}
 #GlavniOkvir {
-	background-color:blue;
 	margin: 0 auto 0 auto;
 	width: 950px;
 }
-
 #Glava {
-	background-color:green;
+	background-image: url('./Grafika/glava.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
 	height: 200px;
 	width: 950px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
-
-#Navigacija {
-    background-color:yellow;
-    height: 30px;
-    width: 950px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
 #Navigacija ul {
+	background-color: red;
+	height: 30px;
+	width: 950px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-items: center;
-	list-style-type: none;
+	list-style-type: none; 
 	height: 30px;
 }
-
+#Navigacija {
+    background-image: transparent url('./Grafika/navigacija.png') no-repeat center-top;
+	background-size: cover;
+	height: 30px;
+	width: 950px;
+}
 #Vsebina {
-	background-color:red;
+	background-color: yellow;
 	min-height: 350px;
 	width: 950px;
 	display: flex;
@@ -70,23 +71,19 @@ html,body{
 	justify-content: space-between;
 	align-items: flex-start;
 }
-
 #Clanek {
-	background-color: cyan;
+	background-color: purple;
 	min-height: 350px;
 	min-width: 700px;
 }
-
 #Sorodno {
-    background-color: red;
-    min-height: 350px;
+	background-color: lime;
+	min-height: 350px;
     width: 250px;
 }
-
 #Noga {
-	background-color: orange;
+	background-color:orange;
 	height: 50px;
 	width: 950px;
 }
 
-    
