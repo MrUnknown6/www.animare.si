@@ -44,9 +44,6 @@ html,body{
 	border-top-right-radius: 20px;
 }
 #Navigacija ul {
-	background-color: red;
-	height: 30px;
-	width: 950px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -54,13 +51,34 @@ html,body{
 	align-items: center;
 	list-style-type: none; 
 	height: 30px;
+	margin: 0;
 }
 #Navigacija {
-    background-image: transparent url('./Grafika/navigacija.png') no-repeat center-top;
+    background: transparent url('./Grafika/navigacija.png') no-repeat center top;
 	background-size: cover;
 	height: 30px;
 	width: 950px;
 }
+
+#Navigacija a:link,
+#Navigacija a:visited,
+#Navigacija a:hover,
+#Navigacija a:active {
+    font-size: 14px
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-bottom: 0px;
+    padding: 7px 10px;
+    box-sizing: border-box;
+    transition: all .75s ease;
+}
+#Navigacija a:hover
+#Navigacija a:active {
+	background-color: rgba(115,155,210,.35);
+	transition: all 1s ease;
+}    
 #Vsebina {
 	background-color: yellow;
 	min-height: 350px;
