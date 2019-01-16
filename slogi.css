@@ -82,7 +82,7 @@ html,body{
 	transition: all 1s ease;
 }    
 #Vsebina {
-	background-color: yellow;
+	background-color: purple;
 	min-height: 350px;
 	width: 950px;
 	display: flex;
@@ -94,10 +94,14 @@ html,body{
 #Clanek {
 	background-color: purple;
 	min-height: 350px;
-	min-width: 700px;
+	width: 750px;
 }
 #Sorodno {
-	background-color: lime;
+	background-color: #efe9e7;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
 	min-height: 350px;
     width: 250px;
 }
@@ -117,4 +121,10 @@ html,body{
 }
 #Noga a:hover {
 	text-decoration: underline;
+}
+h2 {
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	border-bottom: 1px solid #ddd;
 }
