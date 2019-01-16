@@ -102,8 +102,19 @@ html,body{
     width: 250px;
 }
 #Noga {
-	background-color:orange;
-	height: 50px;
+	background-image: linear-gradient(to bottom, #739ad0 0, #739ad0 10%, #fff 10%, #fff 15%, #6b3305 15%, #6b3305 100%);
+	background-repeat: repeat-x;
+	color: white;
+	padding: 18px 0 0 20px;
+	margin-bottom: 45px;
+	box-sizing: border-box;
+	height: 45px;
 	width: 950px;
 }
-
+#Noga a {
+	color: white;
+	text-decoration: none;
+}
+#Noga a:hover {
+	text-decoration: underline;
+}
