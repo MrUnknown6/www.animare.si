@@ -2,9 +2,9 @@
 <html lang="sl">
     <head>
          <meta charset="utf-8">
-         <title>Okvirji</title>
+         <title>Prijavnica</title>
          <meta name="description" content="Animare"> 
-         <meta name="keywords" content="splet,HTML,css,Okvirji">
+         <meta name="keywords" content="splet,HTML,css,Prijavnica">
          <meta name="author" content="Rok Alatic">
          <meta name="robots" content="index,follow">
 
@@ -39,25 +39,43 @@
             </nav>
             <section id="Vsebina">
                 <article id="Clanek">
-                    <h1>Animare - Društvo iluzije gibanja</h1>
-                    <img src="./Grafika/naprava.jpg" alt="Z napravo lahko ustvarimo iluzijo gibanja." class="SlikaVClanku">
-                    <p>Z napravo lahko ustvarimo iluzijo gibanja.
-                    Že vrsto let se ukvarjamo z izdelavo animacij in animiranih filmov. Pri tem uporabljamo različne tehnike animiranja, nekatere segajo daleč nazaj v zgodovino. Animacija preslepi človeški vid, saj hitro predvajanje zaporednih sličič ustvari iluzijo gibanja. Običajno je dovolj 12 ali 24 sličic na sekundo, da dosežemo tekoče gibanje predmetov.</p>
+                    <h1>Prijava na dogodek</h1>
+                    <img src="./Grafika/Animacija.jpg" alt="Animacija" class="SlikaVClanku">
+                    <br>
+                    
+                            Ime in priimek: 
+                    <input type="text" name="ImePriimek" placeholder="Vpišite ime in priimek">
+                    <br>
+                            E-poštni naslov:
+                    <input type="text" name="Email" placeholder="Vpišite email">
+                    <br>
+                            Telefon:
+                    <input type="text" name="Telefon" placeholder="Vpišite telefon">
+                    <br>
+                            Izberite dogodek:
+                            <select name="IzbraniDogodek">
+                        <option>Delavnica</option>
+                        <option>Razstava</option>
+                        <option>Predavanje</option>
+                    </select>
+                    <br>
+                           Želite prejeti e-gradivo:
+                    <input name="PrejemanjeGradiva" type="checkbox" value="DA" checked="">
+                    <br>
+                    Komentar:
+                    <br> 
+                    <textarea name="VpisiteKomentar" placeholder="Vpišite komentar" cols="40" rows="5"></textarea>
+                    <br>
+                    <input type="submit" value="Poslji">
 
-                    <p>Poleg izdelave animacij, prirejamo različne delavnice animecije za otroke vseh starosti. Za tiste malo starejše pa tudi predavanja. Najboljše izdelke z veseljem pokažemo tudi na stalnih in gostujočih razstavah, kjer se pokažejo vsi ljubitelji animacije.</p>
-
-                    <p>Tisti, ki bi želeli sodelovati z nami, nas najdete na spletni strani ali pa se zglasite na sedežu našega društva:</p>
-
-                    <p>Društvo iluzije gibanja <br>
-                    Pingvinova 14 <br>
-                    1000 Ljubljana</p>
+                    
                 </article>
                 <aside id="Sorodno">
+                    <h2>Predavanje</h2>
+                    <p>Na predavanju predstavljamo uporabo animacije na spletu. Danes se pogosto uporablja za navigacijske gumbe, predstavitvene prikaze (tutorials), spletno oglaševanje in računalniške igrice.</p>
+
                     <h2>Delavnica</h2>
                     <p>V mesecu maju poteka delavnica animiranega filma v tehniki "Stop-motion", s pomočjo katere ustvarimo fizično manipulacijo v realnem svetu predmetov zaradi premikanja likov.</p>
-
-                    <h2>Razstava</h2>
-                    <p>Razstava prikazuje razvoj enega najpomembnejših svetovnih studiev animiranega filma ter faze razvoja studia skozi zgodovino in njegovo produkcijsko strukturo.</p>
                 </aside>
             </section>
             <footer id="Noga">

@@ -1,13 +1,13 @@
 :root {
 	--modra: #739ad0;
 	--rjava: #6b3305;
-	--stetlo-rjava: #efe9e7;
+	--svetlo-rjava: #efe9e7;
 	--bela: #fff;
 	--crna: #000;
 	--obroba: 1px solid #ddd;
 	--rob: 20px;
 }
-html,body{
+html,body {
 	margin: 0;
 	padding: 0;
 	font-family: arial, tahoma, helvetica, sans-serif;
@@ -17,7 +17,7 @@ html,body{
 body {
 	background: #f7f9fb url('./Grafika/ozadje.jpg') no-repeat center;
 }
-#ZgornjaPasica{
+#ZgornjaPasica {
 	height:100px;
 	width: 950px;
 	display: flex;
@@ -26,10 +26,10 @@ body {
 	flex-direction: row;
 	align-items:flex-end;
 }
-.Logo{
+.Logo {
 	margin-left: var(--rob);
 }
-#FacebookTwitter{
+#FacebookTwitter {
 	margin-right: var(--rob);
 	display: flex;
 	flex-wrap: nowrap;
@@ -79,7 +79,7 @@ body {
 #Navigacija a:visited,
 #Navigacija a:hover,
 #Navigacija a:active {
-    font-size: 14px
+    font-size: 14px;
     font-weight: bold;
     text-align: center;
     color: white;
