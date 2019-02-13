@@ -2,13 +2,16 @@
 <html lang="sl">
     <head>
          <meta charset="utf-8">
-         <title>Prijavnica</title>
+         <title>Galerija</title>
          <meta name="description" content="Animare"> 
-         <meta name="keywords" content="splet,HTML,css,Prijavnica">
+         <meta name="keywords" content="splet,HTML,css,Okvirji">
          <meta name="author" content="Rok Alatic">
          <meta name="robots" content="index,follow">
 
          <link rel="stylesheet" href="Slogi.css">
+         <link rel="stylesheet" type="text/css" href="./css/prettyPhoto.css">
+         <script type="text/javascript" src="./js/jquery-1.6.1.min.js"></script>
+         <script type="text/javascript" src="./js/jquery.prettyPhoto.js"></script>
     </head>
     <body>
         <div id="GlavniOkvir">
@@ -39,48 +42,31 @@
             </nav>
             <section id="Vsebina">
                 <article id="Clanek">
-                    <h1>Prijava na dogodek</h1>
-                    <img src="./Grafika/Animacija.jpg" alt="Animacija" class="SlikaVClanku">
-                    <br>
-                    
-                            Ime in priimek: 
-                    <input type="text" name="ImePriimek" placeholder="Vpišite ime in priimek">
-                    <br>
-                            E-poštni naslov:
-                    <input type="text" name="Email" placeholder="Vpišite email">
-                    <br>
-                            Telefon:
-                    <input type="text" name="Telefon" placeholder="Vpišite telefon">
-                    <br>
-                            Izberite dogodek:
-                            <select name="IzbraniDogodek">
-                        <option>Delavnica</option>
-                        <option>Razstava</option>
-                        <option>Predavanje</option>
-                    </select>
-                    <br>
-                           Želite prejeti e-gradivo:
-                    <input name="PrejemanjeGradiva" type="checkbox" value="DA" checked="">
-                    <br>
-                    Komentar:
-                    <br> 
-                    <textarea name="VpisiteKomentar" placeholder="Vpišite komentar" cols="40" rows="5"></textarea>
-                    <br>
-                    <input type="submit" value="Poslji">
-
-                    
+                    <a href="Grafika/Naprava_L.jpg" rel="prettyPhoto[vertiljak]" title="Naprava">
+                        <img src="Grafika/Naprava.jpg" alt="Naprava" class="SlikeVGaleriji">
+                    <a href="Grafika/Posoda_L.jpg" rel="prettyPhoto[vertiljak]" title="Posoda" target="_blank">
+                        <img src="Grafika/Posoda.jpg" alt="Posoda" class="SlikeVGaleriji">
+                    <a href="Grafika/Zaba_L.jpg" rel="prettyPhoto[vertiljak]" title="Zaba" target="_blank">
+                        <img src="Grafika/Zaba.jpg" alt="Zaba" class="SlikeVGaleriji">
+                    <a href="Grafika/Animacija_L.jpg" rel="prettyPhoto[vertiljak]" title="Animacija" target="_blank">
+                        <img src="Grafika/Animacija.jpg" alt="Animacija" class="SlikeVGaleriji">
+                    <a href="Grafika/FestivalVetrnica_L.jpg" rel="prettyPhoto[vertiljak]" title="Vetrnica" target="_blank">
+                        <img src="Grafika/FestivalVetrnica.jpg" alt="FestivalVetrnica" class="SlikeVGaleriji">
+                    <a href="https://www.youtube.com/watch?v=OXSZKRIJWdg" rel="prettyPhoto[vertiljak]" title="Pikselacija" target="_blank">
+                        <img src="Grafika/Pikselacija.jpg" alt="Pikselacija" class="SlikeVGaleriji">                     
                 </article>
                 <aside id="Sorodno">
-                    <h2>Predavanje</h2>
-                    <p>Na predavanju predstavljamo uporabo animacije na spletu. Danes se pogosto uporablja za navigacijske gumbe, predstavitvene prikaze (tutorials), spletno oglaševanje in računalniške igrice.</p>
-
-                    <h2>Delavnica</h2>
-                    <p>V mesecu maju poteka delavnica animiranega filma v tehniki "Stop-motion", s pomočjo katere ustvarimo fizično manipulacijo v realnem svetu predmetov zaradi premikanja likov.</p>
+                    <iframe width="210" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.si/maps?hl=sl&amp;ie=UTF8&amp;t=m&amp;ll=46.051456,14.507307&amp;spn=0.001117,0.001127&amp;z=18&amp;output=embed"></iframe>
                 </aside>
             </section>
             <footer id="Noga">
                 Društvo iluzije gibanja | Pingvinova 14, Ljubljana | <a href="http://www.animare.si" target="_blank">www.animare.si</a>
             </footer>
         </div>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function(){
+            $("a[rel^='prettyPhoto']").prettyPhoto();
+        });
+    </script>
     </body>
 </html>
